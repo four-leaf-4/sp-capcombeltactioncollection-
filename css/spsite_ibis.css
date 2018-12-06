@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*common*/
 html,body{font-size:16px;font-family: "Noto Sans Japanese";}
 @media screen and (max-width:320px){html,body{font-size:14px;}}
@@ -163,6 +163,7 @@ h2{
 .keyvisual img{box-sizing: border-box;}
 .keyvisual img[src*="logo_titile.png"]{max-width:700px;padding: 5% 0 5% 1%;}
 .keyvisual img[src*="reseve_now.png"]{max-width: 500px;padding: 15% 0 1% 1%;}
+.keyvisual img[src*="onsale_now.png"]{max-width: 500px;padding: 15% 0 1% 1%;}
 .keyvisual img[src*="sale_dateon.png"]{max-width: 500px;padding:1% 0 5% 1%;}
 .keyvisual img[src*="completebox_coming.png"]{max-width: 700px;}
 .keyvisual .logo_hardware{
@@ -195,7 +196,8 @@ h2{
 	.keyvisual img[src*="logo_titile.png"]{
 		padding: 5% 0 5% 10%;
 		}
-	.keyvisual img[src*="reseve_now.png"]{
+	.keyvisual img[src*="reseve_now.png"],
+	.keyvisual img[src*="onsale_now.png"]{
 		padding:0%;
 		margin: auto;
 		}
@@ -457,7 +459,10 @@ div[class^="content_"] div[class^="detail_"] .area_txt h3:after{
 	background-color:#fff;
 	margin: 1.0rem 0 0;
 	}
-div[class^="content_"] div[class^="detail_"] .area_txt .item_name{color:#FFFF00;}
+div[class^="content_"] div[class^="detail_"] .area_txt .item_name{
+	color:#FFFF00;
+	display: block;
+	}
 	div[class^="content_ecapexculsive"] div[class^="detail_"] .area_txt .empha_ecap,
 	div[class^="content_ecapexculsive"] div[class^="detail_"] .area_txt .item_name{
 		font-size:2.4rem;
@@ -712,3 +717,6 @@ div[class="content_colectorbox"] .about_collector_flex .spec{
 	height:0.6rem;
 	}
 /*spec end*/
+iframe[src*="https://www.youtube.com/"]{
+	border:0;
+	}
